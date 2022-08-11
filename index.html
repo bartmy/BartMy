@@ -20,46 +20,60 @@
 
   <body>
     <header>
-      <div class="intro">
-        <nav>
-          <div class="dropdown">
-            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-            <div class="dropdown-content">
-              <a href="#">About me</a>
-              <a href="#">Projects</a>
-              <a href="#">Feedback</a>
-            </div>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+          <div class="dropdown-content">
+            <a href="#">About me</a>
+            <a href="#">Projects</a>
+            <a href="#">Feedback</a>
           </div>
-        </nav>
-        <hgroup>
-          <h1>Bartek</h1>
-          <h3><span>ucze sie programowac.</span> future full-stack dev</h3>
-        </hgroup>
-        <img src="img/logo-red-noname.png" alt="logo" />
-        <div id="arrow"><i class="fa-solid fa-angle-down"></i></div>
-      </div>
+        </div>
+        <div></div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div id="intro">
+          <hgroup>
+            <h1>Bartek</h1>
+            <h3><span>Learning programming</span> future full-stack dev</h3>
+          </hgroup>
+          <img src="img/logo-red-noname.png" alt="logo" />
+          <div id="arrow"><i class="fa-solid fa-angle-down"></i></div>
+        </div>
+      </section>
+      <section>
+        <div id="projects">
+          <h1>My projects</h1>
+        </div>
+      </section>
+    </main>
+    <footer>
       <div class="feedback">
-        <h3>Want to contact me or give me feedback ?</h3>
-        <h4>
-          Hey, I'm just learning. If you want to give me feedback I will be most
-          grateful for any advice.
-        </h4>
-        <div class="feedback-form">
+        <div class="feedback-text">
+          <h3>Want to contact me or give me feedback ?</h3>
+          <h4>
+            Hey, I'm just learning. If you want to give me feedback I will be
+            most grateful for any advice.
+          </h4>
           <h4>
             Please use this form to leave a word for me regarding this page or
-            any of my projects. You can also find it in the nac menu.
+            any of my projects.
           </h4>
+        </div>
+
+        <div class="feedback-form">
           <h3>Thank you a lot!</h3>
           <form class="usrform">
             <textarea name="comment" form="usrform">
-Enter text here...</textarea
-            >
+            Enter text here...
+            </textarea>
             <input type="submit" />
           </form>
         </div>
       </div>
-    </header>
-    <main></main>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/javascript.js"></script>
   </body>

@@ -6,58 +6,20 @@
 
 html {
   font-size: 10px;
+  font-family: "Oswald";
+  scroll-behavior: smooth;
 }
 
 /* header */
 
 header {
-  height: 100vh;
+  height: 10vh;
   width: 100%;
   background-color: aqua;
   position: fixed;
   top: 0;
   left: 0;
-  overflow-x: hidden;
-  font-family: "Oswald";
-  z-index: 1;
-}
-header .intro {
-  height: 70vh;
-  width: 100%;
-  background-color: aqua;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  font-family: "Oswald";
-  z-index: 1;
-}
-header .feedback {
-  height: 30vh;
-  width: 100%;
-  margin-top: 70vh;
-  background-color: rgb(14, 146, 146);
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  font-family: "Oswald";
-  z-index: 1;
-}
-
-main {
-  height: 100vh;
-  background-color: brown;
-  margin-top: 100vh;
-  position: relative;
-  z-index: 2;
-}
-
-header img {
-  position: absolute;
-  bottom: 0;
-  height: 60%;
-  right: -20%;
+  z-index: 3;
 }
 
 /* nav button */
@@ -87,7 +49,7 @@ header nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: transparent;
+  background-color: aqua;
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -107,29 +69,59 @@ header nav {
   display: block;
 }
 
-header hgroup {
+main {
+  position: relative;
+  background-color: brown;
+}
+main #intro {
+  height: 90vh;
+  margin-top: 7vh;
+  width: 100%;
+  background-color: rgb(30, 199, 199);
+  position: relative;
+  overflow-x: hidden;
+}
+main #projects {
+  height: 90vh;
+  background-color: rgb(51, 180, 47);
+  position: relative;
+}
+
+#intro img {
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  right: 0%;
+}
+
+#intro hgroup {
   position: absolute;
   top: 10%;
   left: 8%;
   text-transform: uppercase;
-  z-index: 1;
 }
-header .feedback {
-  position: absolute;
-  left: 7%;
-  bottom: 10%;
+#intro hgroup h1{
+  font-size: 7rem;
 }
 
-header h1 {
+#intro hgroup h3{
+  font-size: 5rem;
+}
+
+#projects {
+  text-transform: uppercase;
+}
+
+h1 {
   font-size: 3.5rem;
 }
 
-header h3 {
+h3 {
   font-size: 2rem;
   font-weight: 400;
 }
 
-header h4 {
+h4 {
   font-size: 2rem;
   font-weight: 300;
 }
@@ -138,7 +130,8 @@ header h4 {
   width: 64px;
   height: 64px;
   border: 3px solid black;
-  position: absolute;
+  position: fixed;
+  z-index: 3;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
@@ -160,6 +153,29 @@ header h4 {
 
 .fa-angle-down {
   animation: arrow 1.4s infinite linear;
+}
+
+footer {
+  position: relative;
+  background-color: rgb(14, 146, 146);
+  height: 20vh;
+  width: 100%;
+}
+
+footer .feedback-text {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
+
+footer .feedback-form {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+}
+input[type="text"],
+textarea {
+  background-color: aqua;
 }
 
 /* media queries */
